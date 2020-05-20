@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mis gifos</video></title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/dark.css">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">  
+    </head>
+    <body>
+        <div class="caja">
+            <div class="barra-titulo">
+                Bienvenidos/as a Gifos.com! ---- Donde los gifs están.
+            </div>
+        </div>
+        <header>
+            <div class="encabezado">
+                <a class="formLogo" href="./index.html"><div class="logo"></div></a>
+                <nav>
+                    <form action="./upload.html"><button class="boton">Crear Gifos</button></form>
+                    <select class="boton" id="selectCambioTema">
+                        <option value=""> Elegir tema</option>
+                        <option value="claro">Claro</option>
+                        <option value="oscuro">Oscuro</option>
+                    </select>
+                    <a class="enlace" href="./misGif.html">Mis Gifos</a>
+                </nav>
+                </div>
+        </header>
+        <section id="contenedorGridMyGif">
+            <h1 class="tituloRejilla">Mis Guifos</h1>
+            <div id="regillaMisGif" class="grid">
+
+            </div>            
+        </section>
+        <script src="./js/general.js"></script>
+        <script src="./js/misGif.js"></script>
+        <script>
+            start();
+        </script>
+    </body>
+
+</html>

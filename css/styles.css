@@ -1,0 +1,633 @@
+body {
+    font-family: "Chakra Petch",sans-serif;
+    color: #110038;
+    background: #fff4fd;
+}
+
+input,
+button {
+    font-family: inherit;
+    margin-left: 8px;
+}
+
+button,
+select {
+    cursor: pointer;
+    
+}
+
+.bienvenido {
+    width: 1430px;
+    height: 23px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    box-shadow: 0 1px 0 0 #110038;
+}
+.contieneTitulo {
+    display: flex;
+    background-image: linear-gradient(to right, #4180f6, #f7c9f3);
+    width: 285px;
+}
+.con-boton {
+    width: 274px;
+}
+.barra-tituloCerrar {
+    padding: 5px;
+    color: #fff;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 274px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.barra-titulo {
+    background-image: linear-gradient(to right, #4180f6, #f7c9f3);
+    padding: 5px;
+    color: #fff;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+header,
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    margin: 20px auto;
+}
+
+.contenido .caja {
+    padding: 15px;
+    
+}
+
+.caja {
+    
+    overflow: auto;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+
+}
+.caja.cuadro-busqueda {
+    display: block;
+    width: 1200px;
+    height: 99px;
+
+}
+
+.formLogo {
+ display: inline-block;
+}
+
+.logo {
+    background: url(".././assets/gifOF_logo.png") no-repeat center;
+    width: 102px;
+    border: 0;
+    height: 64px;
+    display: inline-block;
+    position: 91px 59px;
+}
+
+nav {
+    display: inline-flex;
+    float: right;
+    line-height: 30px;
+}
+
+.boton {
+    background: #f7c9f3;
+    border: 1px solid #110038;
+    box-shadow: inset 1px 1px #fff;
+    font-family: inherit;
+    padding: 6px 25px;
+    margin-right: 10px;
+    line-height: 20px;
+    height: 33px;
+
+}
+
+.boton[disabled]{
+    width: 100px;
+    height: 36px;
+    background: #E6E6E6;
+    opacity: 100%;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+
+}
+
+.enlace {
+    color:inherit;
+    text-decoration: none;
+
+}
+
+.contenido-caja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imput-busqueda {
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+    width: 90%;
+    height: 45px;
+    font-size: 1.3em;
+    padding: 0 5px;
+}
+
+.boton.boton-busqueda {
+    padding: 0 10px;
+    display: flex;
+
+}
+
+.lupa {
+    background: url("/assets/lupa.svg") no-repeat center;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+[disabled].lupa {
+    background: url("/assets/lupa_inactive.svg") no-repeat center;
+}
+
+#seccionBusquedaCuadro {
+    display: block;
+}
+.tituloRejilla {
+    background: #fffafe;
+    border: 1px solid #e6bbe2;
+    box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 3px,6px;
+    width: 100%;
+}
+
+.contiene-gifs{
+    display: grid;
+    position: relative;
+    grid-template-columns: 24.3% 24.3% 24.3% 24.3%;
+    justify-content: space-between;
+
+
+}
+
+.contiene-gifs > div {
+    margin: 0 20px 20px 0;
+}
+
+.cajaGifs {
+    width: 285px;
+    height: 315px;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+.preview-gif {
+    width: 286px;
+    height: 296px;
+}
+.cargando {
+    background: url("../assets/loading.gif") no-repeat center -34px lightgray;
+    background-size: 20%;
+    min-height: 170px;
+}
+#buscar {
+    display: none;
+}
+/* ID SECCIONES UPLOAD */
+#grabarGif {
+    display: flex;
+    justify-content: center;
+}
+#capturaVideo {
+    display: none;
+    justify-content: center;
+}
+#previoVideo {
+    display: none;
+    justify-content: center;
+}
+#subirVideo {
+    display: none;
+    justify-content: center;
+}
+#opcionVideo {
+    display: none;
+    justify-content: center;
+}
+#botonCapturar {
+    display: flex;
+}
+#botonListo {
+    display: none;
+}
+#contenedorGridMyGif {
+    display: flex;
+    flex-direction: column;
+}
+/* AUI EMPIEZA LA PAJINA UPLOAD*/
+div.botonGrande { 
+    padding-top: 0px;
+    max-width: 90%;
+    height: 386px;
+    width: 684px;
+    background: #E6E6E6;;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.tituloPequeño {
+    width: 681px;
+    height: 24px;
+    position: relative;
+    padding: 1px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+.imgWindows{
+    width: 32px;
+    height: 32px;
+    margin-top: 32px;
+    margin-left: 25px;
+}
+.pWhite {
+    width: 135.1px;
+    height: 18px;
+    margin: 3px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+h2.pBold {
+    width: 280px;
+    height: 22px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-top: -33px;
+    margin-left: 73px;
+}
+.pBold {
+    font-weight: 700;
+}
+.Lista {
+    width: 518px;
+    height: 190px;
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-top: 17px;
+    margin-left: 73px;
+}
+.segundoBoton {
+    position: relative;
+    left: 330px;
+    top: 27px;
+    height: 50px;
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.botonBlanco {
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    width: 144px;
+    height: 36px;
+}
+.botonRosa {
+    width: 144px;
+    height: 36px;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.textoAzulRegular {
+    font-weight: 400;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    width: 100%;
+    justify-content: center;
+}
+.video {
+    width: 288px;
+    height: 298px;
+}
+
+/* SECCIION CAPTURA VIDEO*/
+.cajaCaptura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 860px;
+    height: 548px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.tituloCaptura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+    height: 24px;
+    position: relative;
+    top: -20px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+h2.pWhiteCaptura {
+    width: 206px;
+    height: 18px;
+    font-size: 14px;
+    display: flex;
+    margin-left: 4px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+img.cerrar {
+    width: 16px;
+    height: 14px;
+    display: flex;
+}
+.cerrarGif {
+    padding-right: 3px;
+}
+.bordeVideo {
+    width: 580px;
+    height: 436px;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    position: relative;
+    top: -14px;
+} 
+.videoCaja {
+    height: 432px;
+    position: relative;
+    top: 2px;
+}
+div.todosBotonesDeCaptura {
+    position: relative;
+    left: 330px;
+    top: -57px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.botonCaptura {
+    width: 144px;
+    height: 38px;
+    position: relative;
+    top: 64px;
+    align-items: center;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.botonCamara{
+    width: 34px;
+    height: 35px;
+    display: flex;
+    left: -42px;
+    top: -2px;
+    position: relative;
+    justify-content: space-evenly;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.rosaPalo {
+    background: #FF6161;
+}
+/* SECCION  PREVIOVIDEO*/
+h2.pWhitePrevio {
+    width: 80px;
+    height: 18px;
+    font-size: 14px;
+    display: flex;
+    margin-left: 4px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+img.cerrar {
+    width: 16px;
+    height: 14px;
+    display: flex;  
+}
+div.todosLosBotonesDeSubir {
+    position: relative;
+    left: 246px;
+    top: 10px;
+    height: 50px;
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* SECCION subirVideo*/
+h2.pWhiteSubir {
+    width: 102px;
+    height: 18px;
+    font-size: 14px;
+    display: flex;
+    margin-left: 4px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+img.cerrar {
+    width: 16px;
+    height: 14px;
+    display: flex;
+}
+.bordeVideoSubir {
+    width: 831px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 2px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+img.world {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    position: relative;
+    left: 170px;
+    top: -40px;
+}
+.textoSubida {
+    position: relative;
+    left: 161px;
+    top: -75px; 
+}
+.moverDerecha {
+    position: relative;
+    left: 340px;
+    top: 8px;
+}
+h2.textoAzuldeSubida {
+    width: 216px;
+    height: 22px;
+    display: flex;
+    margin-top: 173px;
+    margin-left: -107px;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+.textoTiempo {
+    width: 216px;
+    height: 22px;
+    display: flex;
+    position: relative;
+    top: -190px;
+    left: 210px;
+}
+.textoGrisRegular {
+    width: 245px;
+    height: 14px;
+    display: flex;
+    margin-top: 248px;
+    margin-left: -278px;
+    font-size: 12px;
+    color: rgba(17,0,56,0.64);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+}
+.labeled {
+    width: 53px;
+    height: 14px;
+    font-size: 12px;
+    color: #00001A;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    text-decoration: line-through;
+}
+.form {
+    width: 22px;
+    height: 222px;
+}
+button.buttonRepeat {
+    width: 65px;
+    height: 18px;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 35px;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+/* SECCION OPCIONVIDEO*/
+div.cajaCaptura.Opcion {
+    width: 721px;
+    height: 391px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.tituloCaptura.opcion {
+    width: 715px;
+    height: 24px;
+    margin-left: 3px;
+    background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+h2.pWhite {
+    width: 153px;
+    height: 12px;
+    display: flex;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.cerrarOpcion{
+    width: 16px;
+    height: 14px;
+    display: flex;
+    padding-right: 3px; 
+}
+.resultadOpcion {
+    width: 100%;
+}
+.bordeVideOpcion {
+    width: 371px;
+    height: 199px;
+    display: flex;
+    margin-top: 24px;
+    margin-left: 24px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+h2.textoAzulNegrita {
+    width: 187px;
+    height: 22px;
+    margin-left: 419px;
+    margin-top: -180px;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+.buttonRepeatOption.textoAzulRegular {
+    width: 256px;
+    height: 36px;
+    display: flex;
+    margin-left: 419px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.buttonRepeat.textoAzulRegular {
+    width: 144px;
+    height: 36px;
+    display: flex;
+    margin-left: 551px;
+    margin-top: 134px;
+    justify-content: space-evenly;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+.botonVerMas {
+    position: relative;
+    left: 20px;
+    color: white;
+    position: relative;
+    left: 4px;
+    top: -56px;
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    width: 81px;
+    height: 34px;
+}

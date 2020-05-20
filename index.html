@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/dark.css" />
+
+</head>
+
+<body>
+    <div class="caja">
+        <div class="barra-titulo">
+            Bienvenidos/as a Gifos.com! ---- Donde los gifs están.
+        </div>
+    </div>
+    <header>
+        <div class="encabezado">
+            <div class="logo"></div>
+            <nav>
+                <form action="./upload.html"><button class="boton">Crear Gifos</button></form>
+                <select class="boton" id="selectCambioTema">
+                    <option value=""> Elegir tema</option>
+                    <option value="claro">Claro</option>
+                    <option value="oscuro">Oscuro</option>
+                </select>
+                <a class="enlace" href="./misGif.html">Mis Gifos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="seccionBusquedaCuadro">
+            <div class="caja cuadro-busqueda">
+                <h1 class="barra-titulo">Buscar</h1>
+                <div class="contenido-caja">
+                    <input id="inputBusqueda" type="text" class="imput-busqueda"
+                        placeholder="Buscar gifs, hashtags,temas, busca lo que quieras" />
+                    <button id="buttonBusqueda" disabled class="boton boton-busqueda"><span
+                            class="lupa"></span>Buscar</button>
+                </div>
+            </div>
+        </section>
+        <section id="sugerencias">
+            <h1 class="tituloRejilla"> Hoy te sugerimos</h1>
+            <div class="contiene-gifs" id="hoyTeSugerimos">
+                <!--aqui iran los gifs-->
+            </div>
+        </section>
+        <section id="sectionTendencias">
+            <h1 class="tituloRejilla">Tendencias:</h1>
+            <div class="contiene-gifs" id="tendencias">
+                <!--aqui iran los gifs-->
+            </div>
+        </section>
+        <section id="buscar">
+            <h1 class="tituloRejilla" id="busquedas">Sin resulados</h1>
+            <div class="contiene-gifs" id="busqueda">
+                <!--aqui iran los gifs-->
+            </div>
+        </section>
+    </main>
+    <script src="./js/general.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/tendencias.js"></script>
+    <script src="./js/find.js"></script>
+    <script>
+        start();
+    </script>
+</body>
+
+</html>

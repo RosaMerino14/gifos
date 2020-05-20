@@ -1,0 +1,33 @@
+
+body.oscuro {
+    background: #110038;
+}
+.oscuro .logo {
+    background: url(".././assets/gifOF_logo_dark.png") no-repeat center;
+}
+.oscuro .barra-titulo {
+    background-image:linear-gradient(to right, #2e32fb, #ee3efe);
+}
+.oscuro.boton:not([disabled]) {
+    background: #ee3efe;
+    color: #fff;
+}
+.oscuro .boton .lupa {
+    background: url("/assets/lupa_light.svg") no-repeat center;
+}
+.oscuro .enlace {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.oscuro .caja {
+    background-color: #b4b4b4;
+    box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+}
+.oscuro h1 {
+    background: #fffafe;
+    border: 1px solid #2e32fb;
+    box-shadow: inset -2px -2px 0 0 #e6dce4; inset: 2px 2px 0 0 #110038;
+}
+.oscuro .botonVerMas {
+    background: #2E32FB;
+}

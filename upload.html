@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gif.Os</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="caja">
+        <h1 class="barra-titulo">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h1>
+    </div>
+    <header>
+        <div id="logoBotonEncontrar">
+            <div class="logoBoton logoFlecha">
+                <a href="./index.html"><img class="flecha" src="./assets/arrow.svg" alt="flecha Atrás"></a>
+                <img class="logo" src="./assets/gifOF_logo.png" alt="logo">
+            </div>
+            <div>
+                <span id="inputBusqueda"></span>
+                <span id="buttonBusqueda"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="grabarGif">
+            <div class="botonGrande">
+                <div class="tituloPequeño">
+                    <h2 class="pWhite">Crear Guifos</h2>
+                </div>
+                <div class="titleIn">
+                    <img class="imgWindows" src="./assets/window_img.png" alt="window">
+                    <h2 class="pBold">Aquí podrás crear tus propios guifos</h2>
+                </div>
+                <div class="Lista">
+                        <p>Crear tu <span class="pBold">guifo</span> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                        <p><span class="pBold">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                        <p><span class="pBold">2)</span> Capturar tu momento guifo</p>
+                        <p><span class="pBold">3)</span> Revisar el momento</p>
+                        <p><span class="pBold">4)</span> Listo para subir y compartir!</p>
+                        <p>¿Quieres comenzar a crear tu <span class="pBold">guifo</span> ahora?</p>
+                </div>
+                <div class="segundoBoton">
+                    <form action="./misGif.html"><button id="cancelarBoton" class="botonBlanco textoAzulRegular">Cancelar</button></form>
+                    <button id="botonComenzar" class="botonRosa textoAzulRegular">Comenzar</button>
+                </div>
+            </div>
+        </section>
+        <section id="capturaVideo">
+            <div class="cajaCaptura">
+                <div class="tituloCaptura">
+                    <h2 id="tituloCambio" class="pWhiteCaptura">Un Chequeo Antes de Empezar</h2>
+                    <img id="cerrarCaptura" class="cerrar" src="./assets/button3.svg" alt="cierre">
+                </div>
+                <div class="bordeVideo">
+                    <video id="videoCaja" class="videoCaja"></video>
+                </div>
+                <div class="todosBotonesDeCaptura">
+                    <button id="botonCapturar" class="botonCaptura">
+                        <span class="botonCamara">
+                            <img class="camara" src="./assets/camera.svg" alt="Captura">
+                        </span>
+                        <span class="pBlueRegular camara">Capturar</span>
+                    </button>
+                    <button id="botonListo" class="botonCaptura rosaPalo">
+                        <span class="botonCamara rosaPalo">
+                            <img src="./assets/recording.svg" alt="Captura">
+                        </span>
+                        <span class="pBlueRegular go">Listo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="previoVideo">
+            <div class="cajaCaptura">
+                <div class="tituloCaptura">
+                    <h2 class="pWhitePrevio">Vista Previa</h2>
+                    <img id="cerrarPrevio" class="cerrar" src="./assets/button3.svg" alt="cierre">
+                </div>
+                <div class="bordeVideo">
+                    <img id="resultado" class="videoCaja" src="img" alt="Gif">
+                </div>
+                <div class="todosLosBotonesDeSubir">
+                    <button id="botonRepetir" class="botonBlanco textoAzulRegulr">Repetir Captura</button>
+                    <button id="botonSubir" class="botonRosa textoAzulRegular ">Subir Guifo</button>
+                </div>
+            </div>
+        </section>
+        <section id="subirVideo">
+            <div class="cajaCaptura">
+                <div class="tituloCaptura">
+                    <h2 class="pWhiteSubir">Subiendo Guifo</h2>
+                    <img id="cerrarSubida" class="cerrar" src="./assets/button3.svg" alt="cierre">
+                </div>
+                <div class="bordeVideoSubir">
+                    <img class="world" src="./assets/globe_img.png" alt="bola del mundo">
+                    <div class="textoSubida"><h2 class="textoAzuldeSubida">Estamos subiendo tu guifo…</h2></div>
+                    <div class="textoTiempo"><h2 class="textoGrisRegular">Tiempo restante: <span class="labeled">38 años</span> algunos minutos</h2></div>
+                </div>
+                <div class="allButtonCapture">
+                    <form action="#"><button class="botonBlanco moverDerecha">Cancelar</button></form>
+                </div>
+            </div>
+        </section>
+        <section id="opcionVideo">
+            <div class="cajaCaptura Opcion">
+                <div class="tituloCaptura opcion">
+                    <h2 class="pWhite">Guifo Subido Con Éxito</h2>
+                    <img id="cerrarOpcion" class="cerrarOpcion" src="./assets/button3.svg" alt="cierre">
+                </div>
+                <div class="cajaBotonResultados">
+                    <div class="bordeVideOpcion">
+                        <img id="resultados" class="resultadOpcion" src="img" alt="gif terminado">
+                    </div>
+                    <div class="todosLosBotonesLadoDerecho">
+                        <h2 class="textoAzulNegrita">Guifo Subido Con Éxito</h2>
+                        <button id="salvarUrl" class="buttonRepeatOption textoAzulRegular">Copiar Enlace Guifo</button>
+                        <button id="salvarGif" class="buttonRepeatOption textoAzulRegular">Descargar Guifo</button>
+                    </div>
+                </div>
+                <div class="allButtonCapture option">
+                    <button id="botonOk" class="buttonRepeat textoAzulRegular">Listo</button>
+                </div>
+            </div>
+        </section>
+        <section id="contenedorGridMyGif">
+            <h2 class="tituloRejilla">Mis Guifos</h2>
+            <div id="regillaMisGif" class="grid">
+
+            </div>            
+        </section>
+    </main>
+    <script src="./js/home.js"></script>
+    <script src="./js/upLoad.js"></script>
+    <script src="./js/misGif.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+</body>
+</html>
